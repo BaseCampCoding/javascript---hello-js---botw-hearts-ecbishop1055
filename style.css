@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 1rem 2rem;
+}
+
+#hearts-container {
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(15, auto);
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+  clip-path: url(#heart-clip);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.heart * {
+  background-color: #444;
+  --full-color: red;
+  transition: background-color 0.15s ease-in;
+}
+
+.heart.extra * {
+  --full-color: gold;
+}
+
+.heart[data-quarters="1"] .top-left {
+  background-color: var(--full-color);
+}
+
+.heart[data-quarters="2"] .top-left,
+.heart[data-quarters="2"] .bottom-left {
+  background-color: var(--full-color);
+}
+
+.heart[data-quarters="3"] .top-left,
+.heart[data-quarters="3"] .bottom-left,
+.heart[data-quarters="3"] .bottom-right {
+  background-color: var(--full-color);
+}
+
+.heart[data-quarters="4"] .top-left,
+.heart[data-quarters="4"] .bottom-left,
+.heart[data-quarters="4"] .bottom-right,
+.heart[data-quarters="4"] .top-right {
+  background-color: var(--full-color);
+}
+
+#controls-container {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  gap: 0.5rem;
+}
+
+.control {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}

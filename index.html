@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breath of the Wild Hearts</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <svg height="0" width="0">
+      <defs>
+        <clipPath id="heart-clip" clipPathUnits="objectBoundingBox">
+          <path
+            d="M 0 .6
+               v -.6
+               h .6 
+               a .3 .3 90 0 1 0 .6
+               a .3 .3 90 0 1 -.6 0
+               z"
+            transform="rotate(225,.46,.4)"
+          ></path>
+        </clipPath>
+      </defs>
+    </svg>
+
+    <main>
+      <div id="hearts-container">
+        <div class="heart" data-quarters="4">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="4">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="4">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="4">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="4">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="4">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="4">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="4">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="3">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="0">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+        <div class="heart" data-quarters="0">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+        </div>
+      </div>
+      <div id="controls-container">
+        <div class="control">
+          <button id="hit-button">Hit</button>
+          <input id="hit-damage-input" type="number" min="0" value="0" />
+        </div>
+        <div class="control">
+          <button id="heal-button">Heal</button>
+          <input id="heal-amount-input" type="number" min="0" value="0" />
+        </div>
+        <button id="add-heart-container-button">Add Heart Container</button>
+        <div class="control">
+          <button id="overheal-button">Overheal</button>
+          <input id="overheal-amount-input" type="number" min="0" value="0" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
