@@ -14,7 +14,7 @@ In this assignment you are going use JavaScript to implement a Breath of the Wil
 
 ### Rubric
 
-- [ ] Heal
-- [ ] Add Heart Container
-- [ ] Basic Overheal (heal to full and add extra, but don't fix other controls)
+- [x] Heal
+- [x] Add Heart Container
+- [x] Basic Overheal (heal to full and add extra, but don't fix other controls)
 - [ ] Correct Overheal
